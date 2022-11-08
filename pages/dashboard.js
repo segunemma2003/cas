@@ -1,4 +1,10 @@
 import React,{Component} from 'react';
+import FifthSlide from '../components/dashboard/fifth-slide';
+import ForthSlide from '../components/dashboard/fourth-slide';
+import FirstSlide from '../components/dashboard/lay';
+import SecondSlide from '../components/dashboard/second-slide';
+import SixSlide from '../components/dashboard/sixth-slide';
+import ThirdSlide from '../components/dashboard/third-slide';
 import Background1 from "../public/bg.png";
 import Background2 from "../public/bg2.png";
 import Side1 from "../public/side1.png";
@@ -13,9 +19,12 @@ class Dashboard extends Component {
     render(){
         return (
             <>
-               
-               
-              
+               <FirstSlide />
+               <SecondSlide />
+              <ThirdSlide />
+              <ForthSlide />
+              <FifthSlide />
+              <SixSlide />
             </>
         )
     }

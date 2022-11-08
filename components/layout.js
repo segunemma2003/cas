@@ -1,3 +1,4 @@
+import Footer from "./footer";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 
@@ -7,16 +8,19 @@ import Sidebar from "./sidebar";
 export default function Layout({ children }) {
     return (
         <main className="container-fluid">
-            <div className="row">
-            
-            <div className="col-10 d-flex flex-column">
-                
-                <div className="main-container">
-                    {children}
+            <div className="row g-0">
+                <Sidebar />
+            <div className="col-10">
+                <div>
+                    <Navbar />
+                    <div className="d-flex flex-column align-items-center justify-content-center align-content-center">
+                        {children}
+                    </div>
                 </div>
+                
             </div>
             </div>
-            
+            <Footer />
            
         </main>
     )

@@ -5,7 +5,9 @@ import {useRouter} from 'next/router';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()
-  if(router.asPath =='/dashboard'){
+  if(router.asPath =='/dashboard' ||
+  router.asPath =='/dashboard2'
+  ){
     return (
       <Layout>
         <Component {...pageProps} />
